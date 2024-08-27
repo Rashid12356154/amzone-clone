@@ -1,0 +1,482 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: #e0dede;
+}
+header .navbar{
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     background-color: #131921;
+     position: relative;
+}
+header .navbar nav{
+    width: 100%;
+   padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 15px;
+    
+}
+header .navbar nav .logo{
+    width: 100px;
+    height: 40px;
+    overflow: hidden;
+    padding: 5px;
+    line-height: 70px;
+}
+header .navbar nav .logo:hover{
+    border: 1px solid white;
+}
+header .navbar nav .logo img{
+    width: 100%;
+}
+header .navbar nav .search-box{
+    width: 70%;
+   order:2;
+   gap: 0px;
+   display: flex;
+   height: 40px;
+}
+header .navbar nav .search-box input{
+    width: 100%;
+       outline: none;
+       border: none;
+       padding: 0px 10px;
+}
+header .navbar nav .search-box button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+header .navbar nav .search-box .btn-all{
+    background-color: #d3d3d3;
+    color: #888;
+    font-size: 14px;
+    display: flex;
+    line-height: 22px;
+    align-items: cente;
+    justify-content: center;
+    border-right: 1px solid #777;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}                                                             
+
+header .navbar nav .search-box .search-btn{
+    background-color: #febd68;
+    color: #000;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+header .navbar nav .location{
+    order:3; 
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+header .navbar nav .location:hover{
+    border: 1px solid white;
+}
+header .navbar nav h2{
+    font-size: 12px;
+    color: #d3d3d3;
+}
+header .navbar nav h3{
+    color: white;
+    font-size:14px;
+    font-weight: 400;
+    
+}
+header .navbar nav span{
+    color: white;
+}
+header .navbar nav a{
+    text-decoration: none;
+}
+header .navbar nav .language{
+    order: 4;
+    color: white;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+header .navbar nav .language:hover{
+    border: 1px solid white;
+}
+header .navbar nav .language img{
+    width:25px;
+}
+ 
+header .navbar nav .account-list{
+    order: 5;
+    display: flex ;
+    gap: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+header .navbar nav .account-list:hover{
+    border: 1px solid white;
+}
+
+header .navbar nav .order{
+    order: 6;
+    cursor: pointer;
+    padding: 3px;
+}
+header .navbar nav .order:hover{
+    border: 1px solid white;
+}
+header .navbar nav .card-shopping{
+    order: 7;
+    cursor: pointer;
+     padding: 3px;
+}
+header .navbar nav .card-shopping:hover{
+    border: 1px solid white;
+}
+header .navbar nav .card-shopping a .card{
+    position: relative;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+header .navbar nav .card-shopping a .card span{
+    position: absolute;
+    bottom: 33px;
+    left: 5px;
+    color: #f09621;
+}
+header .navbar nav .card-shopping a .card b{
+    font-weight: 200;
+}
+header .navbar .links{
+    background-color: #232f3e;
+    display: flex;
+    gap: 5px;
+
+}
+header .navbar .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+header .navbar .links a:hover{
+    border: 1px solid white;
+}
+header .navbar .links .all-btn{
+    gap: 5px;
+    display: flex;
+}
+header .navbar .links .all-btn img{
+     width: 20px;
+     border: 1px solid whtie;
+}
+main{
+    border-bottom: 1px solid  #bdbdbd;
+    margin-bottom: 20px;
+}
+  .hero{
+    width: 100%;
+    height: 50vh;
+    background: url(img/hero-2.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom,#000000 50%,transparent 100%);
+ }
+
+.grid-1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-top: -20vw;
+}
+.grid-1 .card{
+    
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 5px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    
+}
+.grid-1 .card h1{
+    color: #000;
+    font-weight: 600;
+    font-size:1.1rem;   
+}
+.grid-1 .card a{
+    text-decoration: none;
+    color: #6eaef7;
+    
+}
+.grid-1 .card a:hover{
+    color: #ff9900;
+}
+.grid-1 .card .flex{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    margin: 0px;
+    padding: 0px;
+}.grid-1 .card .flex .column{
+    width: 125px;
+    height: 125px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.grid-1 .card .flex .column img{
+    width: 100%;
+    height: 100%;
+}
+.grid-1 .card .flex .column p{
+    color: #818080;
+    font-size: 12px;
+    
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+    padding: 1.5rem;
+}
+.grid-2 .card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.grid-2 .card h1{
+    color: #000;
+    font-weight: 600;
+    font-size:1.1rem;  
+}
+.grid-2 .card a{
+    text-decoration: none;
+    color: #6eaef7;
+}
+.grid-2 .card a:hover{
+    color: #ff9900;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+    padding: 1.5rem;
+}
+.grid-3 .card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.grid-3 .card h1{
+    color: #000;
+    font-weight: 600;
+    font-size:1.1rem; 
+}
+.grid-3 .card a{
+    text-decoration: none;
+    color: #6eaef7;
+}
+.grid-3 .card a:hover{
+    color: #ff9900;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.grid-4 .card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.grid-4 .card h1{
+    color: #000;
+    font-weight: 600;
+    font-size:1.1rem; 
+}
+.grid-4 .card a{
+    text-decoration: none;
+    color: #6eaef7;
+}
+.grid-4 .card a:hover{
+    color: #ff9900;
+}
+ footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2838;
+ }
+ .footer-link{
+    width: 100%;
+    padding: 20px;
+    background-color: #2d3a4b;
+    text-align: center;
+ }
+ .footer-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+ }
+ .footer-navbar{
+    width: 85%;
+    background-color: #1a2838;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: 0px auto;
+ }
+ .footer-navbar .us {
+    width: 220px;
+    padding: 30px 0px;
+ }
+ .footer-navbar .us h1{
+    color: white;
+    font-size:1.3rem;
+    margin-bottom: 15px;
+ }
+ .footer-navbar .us ul{
+    list-style: none;
+    width: 100%;
+}
+.footer-navbar .us ul li{
+    margin-bottom: 20px;
+}
+.footer-navbar .us ul li a{
+    text-decoration: none;
+    color: #c0c9c7;
+}
+.footer-navbar .sell-us{
+    width: 220px;
+    padding: 30px 0px;
+}
+.footer-navbar .sell-us h1{
+    color: white;
+    font-size:1.3rem;
+    margin-bottom: 15px;
+}
+.footer-navbar .sell-us ul{
+    list-style: none;
+    width: 100%;
+}
+.footer-navbar .sell-us ul li{
+    margin-bottom: 20px;
+} 
+.footer-navbar .sell-us ul li a{
+    text-decoration: none;
+    color: #c0c9c7;
+    line-height: 22px;
+}
+.footer-navbar .sell-us ul li a img{
+    width: 20px;
+}
+.footer-navbar .payment{
+     width: 220px;
+     padding: 20px 0px;
+}
+.footer-navbar .payment h1{
+    color: white;
+    font-size:1.3rem;
+    margin-bottom: 15px;
+}
+.footer-navbar .payment ul{
+    list-style: none;
+    width: 100%;
+}
+.footer-navbar .payment ul li{
+    margin-bottom: 20px;
+}
+.footer-navbar .payment ul li a{
+    text-decoration: none;
+    color: #c0c9c7;
+    line-height: 22px;
+}
+.footer-navbar .help{
+    width: 220px;
+    padding: 20px 0px;
+}
+.footer-navbar .help h1{
+    color: white;
+    font-size:1.3rem;
+    margin-bottom: 15px;
+}
+.footer-navbar .help ul{
+    width: 100%;
+    list-style: none;
+}
+.footer-navbar .help ul li{
+    margin-bottom: 20px;
+}
+.footer-navbar .help ul li a{
+    text-decoration: none;
+    color: #c0c9c7;
+    line-height: 22px;
+}
+footer .footer-logo{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+footer .footer-logo img{
+    width: 150px;
+}
+
+  @media (min-width:768px){
+    header .navbar nav .search-box{
+        width: 45%;
+        order: 3;
+    }
+    header .navbar .links .check_btn{
+        display: none;
+    }
+    header .navbar .links .link{
+        width: 100%; 
+        flex-direction: row;
+        z-index: 1;
+        gap: 25px;
+        padding: 0px 20px;
+        bottom: -25px;
+    }
+    header .navbar nav{
+        padding: 20px;
+        height: 70px;
+    }
+    .hero{
+        height: 80vh;
+        
+    }
+    .grid-1 .card .flex .column{
+        width: 135px;
+    }
+  }
